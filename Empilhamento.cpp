@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-
+/* *
+* Lucas Gomes dos Santos
+*/
 struct Node {
     int data;
     Node* next;
@@ -24,7 +26,7 @@ public:
 
     int pop() {
         if (isEmpty()) {
-            cout << "A pilha está vazia." << endl;
+            cout << "A pilha estÃ¡ vazia." << endl;
             return -1;
         } else {
             int value = top->data;
@@ -54,7 +56,7 @@ int main() {
         cin >> number;
 
         if (number <= previousNumber) {
-            cout << "O número digitado não é maior do que o anterior. Digite novamente." << endl;
+            cout << "O nÃºmero digitado nÃ£o Ã© maior do que o anterior. Digite novamente." << endl;
             i--;
             continue;
         }
